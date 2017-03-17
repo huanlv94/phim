@@ -5,6 +5,6 @@ require('now-logs')('phim.clgt.vn')
 
 const server = require('./lib/server')
 
-server.listen(3000, () => {
-  console.log(`app run on http://0.0.0.0:3000`)
+server.listen(process.env.PORT, () => {
+  console.log(`app run on http://0.0.0.0:${process.env.PORT}`)
 })
